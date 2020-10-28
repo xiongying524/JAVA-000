@@ -14,6 +14,7 @@ G1： G1收集器利用多个后台线程来扫描堆，将其划分为多个区
   2、堆内存设置比较小的时候，容易触发GC，GC频次很高，因此，多线程处理GC并不能体现出优势，反而由于线程切换提高成本。
   3、堆内存设置比较大的时候，GC次数减少，每次GC的处理的存活对象较多，并行多线程就会发挥出优势，CMS GC的吞吐量是最大的，串行GC的吞吐量是最低的。
   
+使用 HttpClient 或 OkHttp 访问 http://localhost:8801  
 ~~~
 import java.io.IOException;
 import java.util.Objects;
